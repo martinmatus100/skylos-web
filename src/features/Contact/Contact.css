@@ -1,0 +1,67 @@
+.contact {
+    background-color: var(--color-1);
+    padding-top: 14rem;
+    padding-bottom: 12rem;
+    text-align: center;
+
+    .section-title {
+        margin-bottom: 0;
+
+        &::before {
+            display: none;
+        }
+    }
+}
+
+.contact__top {
+    justify-content: center;
+
+    .section-title  {
+        text-align: center;
+    }
+}
+
+/* Overrides for SectionTitle inside Contact (Dark bg, no number) */
+.contact .section-title h3 {
+    color: black; /* Contrast against red bg */
+    padding-left: 0 !important; /* Remove indentation reserved for number */
+    opacity: 1; 
+}
+
+.contact__text {
+    margin: 0 auto;
+    color: white;
+    
+    h1 {
+        max-width: 700px;
+        margin: 0 auto;
+        font-size: 3rem;
+        font-weight: 500;
+    }
+}
+
+.contact__email-link {
+    line-height: 15rem;
+    font-size: 9rem;
+    font-weight: 500;
+    color: white;
+    transition: all 0.3s;
+}
+
+
+    .contact__email-link:hover {
+        font-weight: 700;
+        color: white;
+    }
+    
+    @media screen and (max-width: 600px) {
+        .contact__email-link {
+            font-size: 3.5rem;
+            font-weight: 600;
+            line-height: normal; /* Adjust line height for smaller text if needed, usually good practice */
+        }
+    
+        .contact__text h1 {
+            font-size: 2rem;
+        }
+    }

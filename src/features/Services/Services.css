@@ -1,0 +1,57 @@
+.services {
+  background-color: var(--color-bg);
+  padding-top: 12rem;
+  padding-bottom: 6rem;
+
+  .column > .section-title {
+    margin-bottom: 6.4rem;
+  }
+}
+
+.services__intro {
+    margin-bottom: 2rem;
+}
+
+.services__list {
+    margin-top: 6rem;
+}
+
+.item-service {
+    margin-bottom: 4rem;
+    padding-right: 2rem;
+
+    > .item-title {
+        margin-bottom: 1.6rem;
+    }
+}
+
+.service-icon {
+    display: block;
+    width: 6.4rem;
+    height: 6.4rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-bottom: 2rem;
+}
+
+/* Icon Mappings - assuming images are in public/images/icons/services/ */
+.service-icon--product-design { background-image: url(/images/icons/services/icon-product-design.svg); }
+.service-icon--branding { background-image: url(/images/icons/services/icon-branding.svg); }
+.service-icon--frontend { background-image: url(/images/icons/services/icon-frontend.svg); }
+.service-icon--research { background-image: url(/images/icons/services/icon-research.svg); }
+.service-icon--illustration { background-image: url(/images/icons/services/icon-illustration.svg); }
+.service-icon--ecommerce { background-image: url(/images/icons/services/icon-ecommerce.svg); }
+
+
+@media screen and (max-width: 800px) {
+    .item-service {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .service-icon {
+        margin-inline: auto;
+    }
+}

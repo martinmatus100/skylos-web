@@ -1,0 +1,32 @@
+.language-switcher {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+  color: var(--color-text);
+  font-family: var(--font-2);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.language-switcher__btn {
+  background: none;
+  border: none;
+  color: var(--color-text-light);
+  cursor: pointer;
+  padding: 0.5rem;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.language-switcher__btn:hover {
+  color: var(--color-1);
+}
+
+.language-switcher__btn--active {
+  color: var(--color-white);
+}
+
+.language-switcher__separator {
+  margin: 0 0.5rem;
+  color: var(--color-gray-12);
+}

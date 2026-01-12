@@ -1,0 +1,87 @@
+{
+  "header": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "services": "Servicios",
+    "works": "Trabajos",
+    "menu": "Menú",
+    "getInTouch": "Contáctanos"
+  },
+  "hero": {
+    "greeting": "Hola.",
+    "intro": "Somos Skylos. Amamos construir grandes marcas y experiencias digitales.",
+    "playVideo": "Ver Video",
+    "scrollDown": "Scrollear"
+  },
+  "about": {
+    "title": "Quiénes Somos",
+    "heading": "Skylos es una agencia digital líder basada en Argentina. Diseñamos experiencias digitales con precisión y pasión.",
+    "description": "Nos especializamos en cerrar la brecha entre el diseño y la tecnología. Nuestro equipo consta de ingenieros dedicados y diseñadores que creen que el gran software nace de un profundo entendimiento de las necesidades del usuario y una ejecución impecable. No solo construimos aplicaciones; construimos negocios.",
+    "process": {
+      "define": { "title": "Definir", "desc": "Comenzamos entendiendo tu visión, objetivos y audiencia para crear una hoja de ruta hacia el éxito." },
+      "design": { "title": "Diseñar", "desc": "Diseñamos interfaces intuitivas, hermosas y centradas en el usuario que elevan la identidad de tu marca." },
+      "build": { "title": "Construir", "desc": "Nuestro equipo de ingeniería da vida a los diseños con código limpio, escalable y de alto rendimiento." },
+      "launch": { "title": "Lanzar", "desc": "Probamos rigurosamente y desplegamos sin problemas, asegurando que tu producto esté listo para el mundo." }
+    }
+  },
+  "services": {
+    "title": "Nuestra Experiencia",
+    "heading": "Desde el concepto hasta el lanzamiento, ofrecemos soluciones digitales integrales.",
+    "description": "Nuestra experiencia abarca todo el ciclo de vida del producto digital. Ya sea que necesites una nueva identidad de marca, una aplicación web compleja o una plataforma de comercio electrónico, tenemos las habilidades para cumplir.",
+    "items": {
+      "productDesign": { "title": "Diseño de Producto", "desc": "Diseño de interfaces centrado en el usuario y prototipado." },
+      "branding": { "title": "Branding", "desc": "Identidad visual, diseño de logotipos y estrategia de marca." },
+      "frontend": { "title": "Desarrollo Frontend", "desc": "Aplicaciones web modernas usando React y Next.js." },
+      "uxResearch": { "title": "Investigación UX", "desc": "Pruebas de usuarios, análisis de comportamiento e insights." },
+      "illustration": { "title": "Ilustración", "desc": "Ilustraciones digitales personalizadas e iconografía." },
+      "ecommerce": { "title": "E-Commerce", "desc": "Tiendas online escalables en Shopify y Magento." }
+    }
+  },
+  "portfolio": {
+    "title": "Trabajos Recientes",
+    "heading": "Mira algunos de nuestros proyectos recientes. Nos enorgullecemos de cada línea de código que escribimos."
+  },
+  "clients": {
+    "heading": "Hemos tenido el privilegio de trabajar con algunas compañías increíblemente innovadoras"
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "heading": "¿Tienes un proyecto en mente? Hablemos. Nos encantaría ayudarte a construir algo genial. Escríbenos a"
+  },
+  "testimonials": {
+    "title": "Testimonios",
+    "heading": "Lo que dicen nuestros clientes de nosotros. Historias reales de alianzas reales.",
+    "list": [
+      {
+        "text": "Skylos transformó nuestra plataforma obsoleta en una aplicación web moderna y de alta velocidad. Su atención al detalle y calidad de ingeniería son inigualables.",
+        "author": "Sarah Jenkins",
+        "role": "CTO, FinTech Solutions",
+        "image": "user-02.jpg"
+      },
+      {
+        "text": "Trabajar con Skylos cambió el juego para nuestra startup. Entendieron nuestra visión de inmediato y entregaron un producto que superó nuestras expectativas.",
+        "author": "David Miller",
+        "role": "Fundador, GreenTech Inc.",
+        "image": "user-01.jpg"
+      },
+      {
+        "text": "Comunicación y habilidades técnicas excepcionales. Skylos no solo escribió código; actuaron como verdaderos socios en nuestro viaje de desarrollo de producto.",
+        "author": "Emily Chen",
+        "role": "Gerente de Producto, Creative Hub",
+        "image": "user-04.jpg"
+      },
+      {
+        "text": "El equipo de Skylos entregó nuestro sitio de comercio electrónico a tiempo y bajo presupuesto. Las mejoras de rendimiento ya han aumentado nuestras ventas significativamente.",
+        "author": "Michael Ross",
+        "role": "Director, Ross Retail Group",
+        "image": "user-05.jpg"
+      }
+    ]
+  },
+  "footer": {
+    "address": "Agencia Digital First. Basada en Argentina, trabajando para el mundo.",
+    "letsTalk": "Hablemos",
+    "copyright": "Copyright Skylos {{year}}",
+    "designBy": "Diseño por Skylos"
+  }
+}

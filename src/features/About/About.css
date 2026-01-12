@@ -1,0 +1,126 @@
+.about {
+  background-color: var(--color-bg);
+  padding-top: 14rem;
+  padding-bottom: 0;
+  position: relative;
+  overflow: hidden; /* For the absolute dotted background */
+}
+
+/* Dotted background */
+.about::before {
+  content: "";
+  display: block;
+  width: 28rem;
+  height: 17.6rem;
+  background-image: url(/images/dots.svg);
+  opacity: .25;
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+.about__line {
+  width: 1px;
+  height: 20rem;
+  background-color: var(--color-1-darker);
+  position: absolute;
+  top: -7rem;
+  left: 6rem; /* Backup default */
+}
+
+/* We can use a pseudo element on a container if we want to position relative to page logic, 
+   but simplistic absolute positioning works for now based on reference */
+
+.about__intro {
+  padding-right: 4rem;
+  margin-bottom: 4rem;
+}
+
+.about__photo-block {
+  position: relative;
+  min-height: 40rem;
+}
+
+.about__photo {
+  background-image: url(/images/skylos-hero-text.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 1.6rem;
+  right: 2rem;
+  left: 2rem;
+  bottom: 3.2rem;
+}
+
+/* Process Section */
+.about__process {
+  margin-top: 8rem;
+  padding-bottom: 8rem;
+  counter-reset: ctr; /* Initialize counter */
+}
+
+.item-process {
+    position: relative;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 4rem;
+}
+
+.item-process h3 {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-left: 0;
+  position: relative;
+  margin-bottom: 1rem;
+  color: var(--color-white);
+}
+
+.item-process h3::before {
+  content: counter(ctr, decimal-leading-zero);
+  counter-increment: ctr;
+  display: block;
+  font-family: var(--font-2);
+  font-size: 1.5rem; /* text-size roughly */
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  background-color: var(--color-1);
+  height: 4.8rem;
+  width: 4.8rem;
+  line-height: 4.8rem;
+  border-radius: 50%;
+  position: relative;
+  left: 0;
+  top: 0;
+  font-size: 2rem;
+}
+
+.item-process p {
+    color: var(--color-text-light);
+}
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+  .about__photo-block {
+    display: none;
+  }
+  .about::before {
+      display: none;
+  }
+  
+  .about__line {
+      display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+    .item-process h3 {
+        justify-content: center;
+    }
+
+    .about__intro {
+      padding-right: 0;
+    }
+}

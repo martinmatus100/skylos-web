@@ -1,0 +1,113 @@
+/* Clients Section Styles */
+.clients {
+    background-color: var(--color-bg);
+    padding-top: 15rem;
+    padding-bottom: 12rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.clients__top {
+    margin-bottom: 8rem;
+    /* Removed text-center to allow 2-col layout to align naturally */
+}
+
+/* Ensure the SectionTitle component inside handles centering if needed, 
+   or the parent column handles it. */
+.clients-section-title {
+    margin-bottom: 2rem;
+    display: inline-block;
+    text-align: left;
+    position: relative;
+    width: 100%;
+
+    &::before {
+        top: 0;
+    }
+
+    h3 {
+        top: 7rem;
+    }
+}
+
+.clients__top h1 {
+    /* Was centered, now left aligned in its column implicitly or explicit if needed */
+    margin: 0;
+}
+
+.clients__list {
+    position: relative;
+    max-width: 1200px;
+    overflow-x: hidden;
+}
+
+/* Carousel / Marquee */
+.clients__carousel {
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.clients__track {
+    display: flex;
+    width: max-content;
+    animation: marquee 30s linear infinite;
+    align-items: center;
+}
+
+.clients__slide {
+    display: block;
+    opacity: 0.15;
+    padding: 0 4rem;
+    transition: opacity .5s;
+    text-align: center;
+    flex: 0 0 auto;
+    width: 200px;
+}
+
+.clients__slide:hover, .clients__slide:focus {
+    opacity: 1;
+}
+
+.clients__slide img {
+    height: 4.8rem;
+    width: auto;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-1 * (200px * 8)));
+    }
+}
+
+.clients__track:hover {
+    animation-play-state: paused;
+}
+
+/* Responsive */
+@media screen and (max-width: 800px) {
+    .clients {
+        padding-top: 10rem;
+    }
+    .clients__top h1 {
+        font-size: 3rem; 
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .clients-section-title {
+        margin-bottom: 7rem;
+    }
+
+    .clients-section-title {
+        h3 {
+            top: 4rem;
+        }
+    }
+}

@@ -1,0 +1,232 @@
+/* ===================================================================
+ * # footer
+ *
+ * ------------------------------------------------------------------- */
+.s-footer {
+    background-color: var(--color-1); /* User override: color-1 */
+    padding-top: var(--vspace-2);
+    padding-bottom: var(--vspace-4);
+    color: white; /* User override: white text */
+}
+
+.s-footer a {
+    color: white; /* User override */
+}
+
+.s-footer .h6 {
+    color: white; /* User override: white titles */
+    margin-top: 0;
+}
+
+
+/* ------------------------------------------------------------------- 
+ * ## footer block
+ * ------------------------------------------------------------------- */
+.s-footer__block {
+    font-size: var(--text-lg);
+    line-height: calc(1.25 * var(--space));
+}
+
+.s-footer__block .h6 {
+    margin-bottom: var(--vspace-0_75);
+}
+
+.s-footer__block--end {
+    font-size: var(--text-sm);
+    line-height: var(--vspace-1);
+    padding-top: var(--vspace-1_75);
+    position: relative;
+    text-align: right; /* Ensure right alignment matches reference logic */
+}
+
+.s-footer__block--end::before {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 33.333%;
+    background-color: rgba(255, 255, 255, 0.5); /* Changed to white alpha for contrast on red */
+    position: absolute;
+    top: var(--vspace-0_25);
+    right: 0; /* Align to right since text is right aligned */
+    left: auto; /* reset */
+}
+
+.s-footer__block--end .btn {
+    background-color: white;
+    border: .2rem solid white;
+    color: black;
+    margin-right: 0;
+    margin-bottom: var(--vspace-1);
+    width: 100%;
+}
+
+.s-footer__block--end .btn:hover, .s-footer__block--end .btn:focus {
+    background-color: var(--color-gray-19);
+    border: 0.2rem solid var(--color-gray-19);
+    color: white;
+}
+
+
+/* ------------------------------------------------------------------- 
+ * ## footer list
+ * ------------------------------------------------------------------- */
+.s-footer__list {
+    list-style: none;
+    margin-left: 0;
+}
+
+.s-footer__list li {
+    padding-left: 0;
+}
+
+
+/* ------------------------------------------------------------------- 
+ * ## copyright
+ * ------------------------------------------------------------------- */
+.ss-copyright {
+    z-index: 2;
+    font-size: 1.5rem;
+    font-weight: 300;
+    position: relative;
+    text-align: right; /* Added to ensure alignment */
+}
+
+.ss-copyright a {
+    display: inline-block;
+    color: white;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+}
+
+.ss-copyright a:hover, .ss-copyright a:focus {
+    border-bottom: 1px solid white;
+}
+
+.ss-copyright span {
+    display: inline-block;
+}
+
+.ss-copyright span::after {
+    content: "|";
+    display: inline-block;
+    padding: 0 .8rem 0 1rem;
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.ss-copyright span:last-child::after {
+    display: none;
+}
+
+
+/* ------------------------------------------------------------------- 
+ * ## go top
+ * ------------------------------------------------------------------- */
+.ss-go-top {
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0);
+    transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    position: fixed;
+    bottom: var(--vspace-1);
+    right: 4rem;
+}
+
+.ss-go-top a {
+    text-decoration: none;
+    border: 0 none;
+    display: block;
+    height: 6.4rem;
+    width: 6.4rem;
+    line-height: 6.4rem;
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--color-gray-19) !important;
+    transition: all .3s;
+    position: relative;
+    color: white;
+}
+
+.ss-go-top a:hover {
+    background-color: white !important;
+    color: black;
+}
+
+/* Simulate visible for now since no JS toggles it yet */
+.ss-go-top {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * footer
+ * ------------------------------------------------------------------- */
+@media screen and (max-width: 1400px) {
+    .s-footer>.row {
+        max-width: 1100px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .s-footer>.row {
+        max-width: 800px;
+    }
+    .s-footer__block--end {
+        text-align: center;
+    }
+    .s-footer__block--end::before {
+        display: none;
+    }
+    .ss-copyright {
+        text-align: center;
+    }
+    .s-footer__block--end::before {
+        right: auto;
+        left: 0;
+        width: 100%;
+        display: none; /* Reference hides it, so we hide it */
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .s-footer {
+        padding-top: var(--vspace-1);
+    }
+    .ss-go-top a {
+        font-size: 1.6rem;
+        height: 6rem;
+        width: 6rem;
+        line-height: 6rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .ss-go-top {
+        right: 2.4rem;
+        bottom: 2.4rem;
+    }
+    .ss-copyright span {
+        display: block;
+    }
+    .ss-copyright span::after {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .s-footer__block {
+        font-size: var(--text-md);
+        line-height: calc(1.125 * var(--space));
+    }
+    .ss-go-top a {
+        font-size: 1.4rem;
+        height: 4.8rem;
+        width: 4.8rem;
+        line-height: 4.8rem;
+    }
+    .ss-copyright {
+        font-size: 1.4rem;
+    }
+}

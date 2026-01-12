@@ -1,0 +1,87 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "works": "Works",
+    "menu": "Menu",
+    "getInTouch": "Get In Touch"
+  },
+  "hero": {
+    "greeting": "Hello.",
+    "intro": "We are Skylos. We love building great brands & digital experiences.",
+    "playVideo": "Play Video",
+    "scrollDown": "Scroll Down"
+  },
+  "about": {
+    "title": "Who We Are",
+    "heading": "Skylos is a premier digital agency based in Argentina. We craft digital experiences with precision and passion.",
+    "description": "We specialize in bridging the gap between design and technology. Our team consists of dedicated engineers and designers who believe that great software is born from a deep understanding of user needs and seamless execution. We don't just build apps; we build businesses.",
+    "process": {
+      "define": { "title": "Define", "desc": "We start by understanding your vision, goals, and audience to create a roadmap for success." },
+      "design": { "title": "Design", "desc": "We craft intuitive, beautiful, and user-centric designs that elevate your brand identity." },
+      "build": { "title": "Build", "desc": "Our engineering team brings designs to life with clean, scalable, and high-performance code." },
+      "launch": { "title": "Launch", "desc": "We test rigorously and deploy seamlessly, ensuring your product is ready for the world." }
+    }
+  },
+  "services": {
+    "title": "Our Expertise",
+    "heading": "From concept to launch, we provide end-to-end digital solutions.",
+    "description": "Our expertise spans across the entire digital product lifecycle. Whether you need a new brand identity, a complex web application, or an e-commerce platform, we have the skills to deliver.",
+    "items": {
+      "productDesign": { "title": "Product Design", "desc": "User-focused interface design and prototyping." },
+      "branding": { "title": "Branding", "desc": "Visual identity, logo design, and brand strategy." },
+      "frontend": { "title": "Frontend Development", "desc": "Modern web applications using React and Next.js." },
+      "uxResearch": { "title": "UX Research", "desc": "User testing, behavior analysis, and insights." },
+      "illustration": { "title": "Illustration", "desc": "Custom digital illustrations and iconography." },
+      "ecommerce": { "title": "E-Commerce", "desc": "Scalable online stores on Shopify and Magento." }
+    }
+  },
+  "portfolio": {
+    "title": "Recent Works",
+    "heading": "Check out some of our recent projects. We take pride in every line of code we write."
+  },
+  "clients": {
+    "heading": "We've had the privilege of working with some incredible innovative companies"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "heading": "Have a project in mind? Let's talk. We'd love to help you build something great. Reach out at"
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "heading": "What our clients say about us. Real stories from real partnerships.",
+    "list": [
+      {
+        "text": "Skylos transformed our outdated platform into a modern, high-speed web application. Their attention to detail and engineering quality is unmatched.",
+        "author": "Sarah Jenkins",
+        "role": "CTO, FinTech Solutions",
+        "image": "user-02.jpg"
+      },
+      {
+        "text": "Working with Skylos was a game-changer for our startup. They understood our vision immediately and delivered a product that exceeded our expectations.",
+        "author": "David Miller",
+        "role": "Founder, GreenTech Inc.",
+        "image": "user-01.jpg"
+      },
+      {
+        "text": "Exceptional communication and technical skills. Skylos didn't just write code; they acted as true partners in our product development journey.",
+        "author": "Emily Chen",
+        "role": "Product Manager, Creative Hub",
+        "image": "user-04.jpg"
+      },
+      {
+        "text": "The team at Skylos delivered our e-commerce site on time and under budget. The performance improvements have already boosted our sales significantly.",
+        "author": "Michael Ross",
+        "role": "Director, Ross Retail Group",
+        "image": "user-05.jpg"
+      }
+    ]
+  },
+  "footer": {
+    "address": "Digital First Agency. Based in Argentina, working worldwide.",
+    "letsTalk": "Let's Talk",
+    "copyright": "Copyright Skylos {{year}}",
+    "designBy": "Design by Skylos"
+  }
+}

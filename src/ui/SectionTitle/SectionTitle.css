@@ -1,0 +1,59 @@
+.section-title {
+  display: block;
+  margin-bottom: 6.4rem;
+  position: relative;
+  padding-bottom: 2rem; /* Ensure space for the num */
+}
+
+.section-title::before {
+  content: attr(data-num);
+  font-family: var(--font-2);
+  font-weight: 600;
+  font-size: 18rem; /* calc(var(--text-size) * 10) roughly */
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+  opacity: 0.1;
+  position: absolute;
+  top: -8rem;
+  left: -2rem;
+  pointer-events: none;
+}
+
+.section-title h3 {
+  z-index: 2;
+  font-weight: bold;
+  color: var(--color-1);
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  position: relative;
+  /* positioning relative to container was in original, simplified here for component isolation */
+  display: inline-block;
+  font-size: 1.5rem; /* h6 size roughly */
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  padding-left: 1rem; /* Give space from the big number if needed, or adjust */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1000px) {
+  .section-title::before {
+    font-size: 14rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section-title {
+    text-align: left;
+  }
+
+  .section-title h3 {
+    padding-left: 2rem;
+  }
+
+  .section-title::before {
+    top: -4rem;
+    font-size: 10rem;
+  }
+}
