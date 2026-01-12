@@ -1,16 +1,79 @@
-# React + Vite
+# 🐺 Skylos Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Official website for **Skylos**, a digital first agency specializing in building great brands and digital experiences.
 
-Currently, two official plugins are available:
+![Skylos Preview](public/images/hero-bg.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Technologies
 
-## React Compiler
+This project is built with a modern frontend stack:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **[React](https://reactjs.org/)** - UI Library
+- **[Vite](https://vitejs.dev/)** - Next Generation Frontend Tooling
+- **[React-i18next](https://react.i18next.com/)** - Internationalization (English & Spanish)
+- **Vanilla CSS** - Custom styling with a BEM-inspired methodology and responsive grid system.
+- **GitHub Pages** - Static hosting and deployment.
 
-## Expanding the ESLint configuration
+## 🛠️ Installation & Local Development
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/martinmatus100/skylos-web.git
+   cd skylos-web
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+   The site will be available at `http://localhost:5173`.
+
+## 🌍 Internationalization (i18n)
+
+The site supports **English (`en`)** and **Spanish (`es`)**.
+Translation files are located in `src/locales/`.
+
+- `en.json`: English translations.
+- `es.json`: Spanish translations.
+
+Language detection is automatic based on the browser, but can be manually toggled via the language switcher in the header.
+
+## 📦 Deployment
+
+This project is configured to deploy automatically to **GitHub Pages**.
+
+### Manual Deployment
+
+To deploy a new version manually:
+
+```bash
+npm run deploy
+```
+
+This script runs `npm run build` and then pushes the `dist` folder to the `gh-pages` branch.
+
+### Environment Handling
+
+The project handles asset paths dynamically for both root domains and subdirectories (like `/skylos-web/`) using `import.meta.env.BASE_URL` in React components and relative paths in CSS.
+
+## 📂 Project Structure
+
+```bash
+src/
+├── assets/         # Static assets imported in components
+├── features/       # Feature-based architecture (Hero, Services, Contact, etc.)
+├── locales/        # i18n JSON translation files
+├── ui/             # Reusable UI components (SectionTitle, etc.)
+└── index.css       # Global styles and Grid system
+```
+
+## 📄 License
+
+[MIT](LICENSE)
