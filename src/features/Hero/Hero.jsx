@@ -7,13 +7,22 @@ export const Hero = () => {
 
     return (
         <section id="hero" className="hero">
-            <div className="hero__bg">
+            <div
+                className="hero__bg"
+                style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/hero-bg.png)` }}
+            >
                 <div className="hero__gradient-overlay"></div>
             </div>
 
             <div className="hero__content container">
                 <div className="hero__content-inner">
-                    <h1 className="hero__title">{t('hero.greeting')}</h1>
+                    <h1 className="hero__title">
+                        <span
+                            className="hero__dots"
+                            style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/dots.svg)` }}
+                        ></span>
+                        {t('hero.greeting')}
+                    </h1>
 
                     <div className="hero__about">
                         <p dangerouslySetInnerHTML={{ __html: t('hero.intro').replace('\n', '<br/>') }} />

@@ -38,15 +38,17 @@
     }
   },
   "portfolio": {
-    "title": "Recent Works",
-    "heading": "Check out some of our recent projects. We take pride in every line of code we write."
+    "title": "Selected Works",
+    "heading": "Check out some of our recent projects. We take pride in every line of code we write.",
+    "projectLink": "Project Link"
   },
   "clients": {
+    "title": "Our Clients",
     "heading": "We've had the privilege of working with some incredible innovative companies"
   },
   "contact": {
     "title": "Get In Touch",
-    "heading": "Have a project in mind? Let's talk. We'd love to help you build something great. Reach out at"
+    "heading": "Let's innovate together."
   },
   "testimonials": {
     "title": "Testimonials",
@@ -82,6 +84,8 @@
     "address": "Digital First Agency. Based in Argentina, working worldwide.",
     "letsTalk": "Let's Talk",
     "copyright": "Copyright Skylos {{year}}",
-    "designBy": "Design by Skylos"
+    "designBy": "Design by Skylos",
+    "whereToFindUs": "Where to Find Us",
+    "followUs": "Follow Us"
   }
 }

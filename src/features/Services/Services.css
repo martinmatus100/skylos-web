@@ -36,12 +36,7 @@
 }
 
 /* Icon Mappings - assuming images are in public/images/icons/services/ */
-.service-icon--product-design { background-image: url(/images/icons/services/icon-product-design.svg); }
-.service-icon--branding { background-image: url(/images/icons/services/icon-branding.svg); }
-.service-icon--frontend { background-image: url(/images/icons/services/icon-frontend.svg); }
-.service-icon--research { background-image: url(/images/icons/services/icon-research.svg); }
-.service-icon--illustration { background-image: url(/images/icons/services/icon-illustration.svg); }
-.service-icon--ecommerce { background-image: url(/images/icons/services/icon-ecommerce.svg); }
+/* Icon Mappings handled in JS via inline styles for dynamic path resolution */
 
 
 @media screen and (max-width: 800px) {

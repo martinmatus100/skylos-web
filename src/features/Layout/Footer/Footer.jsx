@@ -13,7 +13,7 @@ export const Footer = () => {
                 <div className="column large-8 medium-12">
                     <div className="row">
                         <div className="column large-7 tab-12 s-footer__block">
-                            <h4 className="h6">Where to Find Us</h4>
+                            <h4 className="h6">{t('footer.whereToFindUs')}</h4>
 
                             <p>
                                 {t('footer.address')}
@@ -21,7 +21,7 @@ export const Footer = () => {
                         </div>
 
                         <div className="column large-5 tab-12 s-footer__block">
-                            <h4 className="h6">Follow Us</h4>
+                            <h4 className="h6">{t('footer.followUs')}</h4>
 
                             <ul className="s-footer__list">
                                 <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>

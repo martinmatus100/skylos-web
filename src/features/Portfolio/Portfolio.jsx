@@ -7,13 +7,14 @@ export const Portfolio = () => {
     const { t } = useTranslation();
 
     // Mock data - in a real app this might come from a CMS or JSON file
+    // Mock data - in a real app this might come from a CMS or JSON file
     const projects = [
-        { id: 1, title: 'The Red Wheel', cat: 'Branding', img: '/images/portfolio/red-wheel.jpg', link: '#' },
-        { id: 2, title: 'Music Life', cat: 'Frontend Design', img: '/images/portfolio/music-life.jpg', link: '#' },
-        { id: 3, title: 'OI Logo', cat: 'Branding', img: '/images/portfolio/oi-logo.jpg', link: '#' }, // Note: double extension in reference
-        { id: 4, title: 'Corrugated Sheets', cat: 'Frontend Design', img: '/images/portfolio/corrugated-sheets.jpg', link: '#' },
-        { id: 5, title: 'Woodcraft', cat: 'Frontend Design', img: '/images/portfolio/woodcraft.jpg', link: '#' },
-        { id: 6, title: 'The Lamp', cat: 'Frontend Design', img: '/images/portfolio/lamp.jpg', link: '#' },
+        { id: 1, title: 'The Red Wheel', cat: 'Branding', img: 'images/portfolio/red-wheel.jpg', link: '#' },
+        { id: 2, title: 'Music Life', cat: 'Frontend Design', img: 'images/portfolio/music-life.jpg', link: '#' },
+        { id: 3, title: 'OI Logo', cat: 'Branding', img: 'images/portfolio/oi-logo.jpg', link: '#' }, // Note: double extension in reference
+        { id: 4, title: 'Corrugated Sheets', cat: 'Frontend Design', img: 'images/portfolio/corrugated-sheets.jpg', link: '#' },
+        { id: 5, title: 'Woodcraft', cat: 'Frontend Design', img: 'images/portfolio/woodcraft.jpg', link: '#' },
+        { id: 6, title: 'The Lamp', cat: 'Frontend Design', img: 'images/portfolio/lamp.jpg', link: '#' },
     ];
 
     return (
@@ -33,7 +34,7 @@ export const Portfolio = () => {
                         <div className="folio-item">
                             <div className="folio-item__thumb">
                                 <a href={item.link} className="folio-item__thumb-link">
-                                    <img src={item.img} alt={item.title} />
+                                    <img src={`${import.meta.env.BASE_URL}${item.img}`} alt={item.title} />
                                 </a>
                             </div>
                             <div className="folio-item__info">
@@ -41,7 +42,7 @@ export const Portfolio = () => {
                                 <h4 className="folio-item__title">{item.title}</h4>
                             </div>
                             <a href={item.link} className="folio-item__project-link">
-                                Project Link
+                                {t('portfolio.projectLink')}
                             </a>
                         </div>
                     </div>

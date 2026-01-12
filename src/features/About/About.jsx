@@ -8,6 +8,10 @@ export const About = () => {
 
     return (
         <section id="about" className="about">
+            <div
+                className="about__dots"
+                style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/dots.svg)` }}
+            ></div>
             <div className="about__line"></div>
 
             <div className="container row">
@@ -25,7 +29,10 @@ export const About = () => {
                 </div>
 
                 <div className="column large-6 medium-6 about__photo-block">
-                    <div className="about__photo"></div>
+                    <div
+                        className="about__photo"
+                        style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/skylos-hero-text.png)` }}
+                    ></div>
                 </div>
             </div>
 

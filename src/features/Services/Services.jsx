@@ -7,12 +7,12 @@ export const Services = () => {
     const { t } = useTranslation();
 
     const services = [
-        { key: 'productDesign', icon: 'service-icon--product-design' },
-        { key: 'branding', icon: 'service-icon--branding' },
-        { key: 'frontend', icon: 'service-icon--frontend' },
-        { key: 'uxResearch', icon: 'service-icon--research' },
-        { key: 'illustration', icon: 'service-icon--illustration' },
-        { key: 'ecommerce', icon: 'service-icon--ecommerce' },
+        { key: 'productDesign', icon: 'icon-product-design.svg' },
+        { key: 'branding', icon: 'icon-branding.svg' },
+        { key: 'frontend', icon: 'icon-frontend.svg' },
+        { key: 'uxResearch', icon: 'icon-research.svg' },
+        { key: 'illustration', icon: 'icon-illustration.svg' },
+        { key: 'ecommerce', icon: 'icon-ecommerce.svg' },
     ];
 
     return (
@@ -33,7 +33,10 @@ export const Services = () => {
             <div className="container row services__list">
                 {services.map((service) => (
                     <div key={service.key} className="column large-4 medium-6 tab-12 item-service">
-                        <span className={`service-icon ${service.icon}`}></span>
+                        <span
+                            className="service-icon"
+                            style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/icons/services/${service.icon})` }}
+                        ></span>
                         <h3 className="item-title">{t(`services.items.${service.key}.title`)}</h3>
                         <p>{t(`services.items.${service.key}.desc`)}</p>
                     </div>

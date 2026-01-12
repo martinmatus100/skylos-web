@@ -1,4 +1,4 @@
-import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { SectionTitle } from '../../ui/SectionTitle/SectionTitle';
 import './Clients.css';
 
@@ -17,17 +17,18 @@ const clientsList = [
 const marqueeList = [...clientsList, ...clientsList, ...clientsList];
 
 export const Clients = () => {
+    const { t } = useTranslation();
+
     return (
         <section id="clients" className="clients">
 
             <div className="container row clients__top">
                 <div className="column large-4 medium-4">
-                    <SectionTitle number="04" title="Our Clients" className="clients-section-title" />
+                    <SectionTitle number="04" title={t('clients.title')} className="clients-section-title" />
                 </div>
                 <div className="column large-6 medium-6">
                     <h1 className="display-1 title-section">
-                        We've had the privilege of working with
-                        some of the largest and most iconic brands
+                        {t('clients.heading')}
                     </h1>
                 </div>
             </div>
@@ -38,7 +39,7 @@ export const Clients = () => {
                         <div className="clients__track">
                             {marqueeList.map((client, index) => (
                                 <a href="#0" title={client.name} className="clients__slide" key={`${client.name}-${index}`}>
-                                    <img src={`images/icons/clients/${client.icon}`} alt={client.name} />
+                                    <img src={`${import.meta.env.BASE_URL}images/icons/clients/${client.icon}`} alt={client.name} />
                                 </a>
                             ))}
                         </div>

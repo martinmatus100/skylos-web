@@ -8,7 +8,6 @@
 }
 
 .hero__bg {
-  background-image: url(/images/hero-bg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -49,7 +48,7 @@
   padding-top: 20vh;
   padding-bottom: 7vh;
   position: relative;
-  max-width: 1200px; /* From container but explicit here if needed */
+  max-width: 1200px;
 }
 
 .hero__content-inner {
@@ -68,12 +67,11 @@
   position: relative;
 }
 
-.hero__title::before {
+.hero__dots {
   display: block;
-  content: "";
   height: 10rem;
   width: 20rem;
-  background-image: url(/images/dots.svg);
+  background-repeat: no-repeat;
   transform: translateX(-4rem);
   opacity: .25;
   position: absolute;

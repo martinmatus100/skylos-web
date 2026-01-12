@@ -85,7 +85,7 @@ export const Testimonials = () => {
                                         {item.text}
                                     </p>
                                     <div className="testimonial-slider__author">
-                                        <img src={`images/avatars/${item.image}`} alt={item.author} className="testimonial-slider__avatar" />
+                                        <img src={`${import.meta.env.BASE_URL}images/avatars/${item.image}`} alt={item.author} className="testimonial-slider__avatar" />
                                         <cite className="testimonial-slider__cite">
                                             <strong>{item.author}</strong>
                                             <span>{item.role}</span>
